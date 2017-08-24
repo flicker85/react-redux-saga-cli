@@ -1,0 +1,67 @@
+@import './common.less';
+
+.normal {
+  z-index: 1;
+  position: fixed;
+  height: @layout-header-heigh;
+  line-height: @layout-header-heigh;
+  width: 100%;
+  background-color: #fff;
+}
+.logo {
+  float: left;
+  width: @layout-sider-width;
+  height: @layout-header-heigh;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 2em;
+  color: #fff;
+  background-color: @primary-color;
+  text-align: center;
+  overflow: hidden;
+  transition: width .24s;
+}
+.header {
+  border-bottom: 1px solid #D6DDE5;
+  height: @layout-header-heigh;
+  padding-right: 20px;
+}
+.btnCollapsed {
+  .btn;
+  border-right: 1px solid #D6DDE5;
+  padding: 0;
+  width: @layout-header-heigh;
+}
+.menu {
+  float: left;
+  border: none;
+  line-height: @layout-header-heigh - 2;
+  margin: 0 10px;
+}
+.btn {
+  color: #999;
+  float: left;
+  padding: 0 8px;
+  text-align: center;
+  &:hover {
+    color: @primary-color;
+  }
+}
+.rightWarpper {
+  float: right;
+  line-height: @layout-header-heigh;
+}
+.btnUser {
+  float: left;
+  background: transparent;
+  border: none;
+  line-height: @layout-header-heigh - 2;
+  margin-left: 20px;
+  :global(.ant-menu-submenu-title) {
+    padding: 0;
+  }
+  :global(.ant-menu-submenu-horizontal > .ant-menu) {
+    left: auto;
+    right: 0;
+  }
+}

@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+const program = require('commander');
+const create = require('../lib/create');
+
+program
+  .usage('<projectName> [options]')
+  .option('-demo, --demo', 'generate a demo project')
+  .action(function(projectName, options) {
+    create(projectName, options);
+  })
+  .parse(process.argv);
+
+if(!program.args[0]) {
+  program.help();
+}

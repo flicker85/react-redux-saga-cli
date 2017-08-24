@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+const program = require('commander');
+const add = require('../lib/add');
+
+program
+  .usage('<routeName> [options]')
+  .action(function(routeName, options) {
+    add(routeName);
+  })
+  .parse(process.argv);
+
+if(!program.args[0]) {
+  program.help();
+}
