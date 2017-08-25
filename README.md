@@ -43,7 +43,7 @@ Generate a new route
 $ react add MyRoute
 ```
 
-<img src='https://github.com/flicker85/flicker85.github.io/blob/master/images/cmd.jpg' width='600'>
+<img src='https://github.com/flicker85/flicker85.github.io/blob/master/images/cmd.jpg?raw=true' width='600'>
 
-<img src='https://github.com/flicker85/flicker85.github.io/blob/master/images/app.gif' width='600'>
+<img src='https://github.com/flicker85/flicker85.github.io/blob/master/images/app.gif?raw=true' width='600'>
 
