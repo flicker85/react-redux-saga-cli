@@ -4,7 +4,7 @@ const create = require('../lib/create');
 
 program
   .usage('<projectName> [options]')
-  .option('-demo, --demo', 'generate a demo project')
+  .option('-d, --demo', 'generate a demo project')
   .action(function(projectName, options) {
     create(projectName, options);
   })
