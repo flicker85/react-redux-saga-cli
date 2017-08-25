@@ -5,5 +5,5 @@ program
   .version(require('../package').version)
   .usage('<command> [options]')
   .command('new', 'create a new project')
-  .command('add', 'add new view')
+  .command('add', 'add new route')
   .parse(process.argv);

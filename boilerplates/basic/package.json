@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --hot --historyApiFallback --open",
+    "dev": "webpack-dev-server --hot --historyApiFallback --open --no-info",
     "build": "set NODE_ENV=production&&webpack -p --progress --profile --colors",
     "mock": "json-server ./mock/db.js --port 9090 --quiet",
     "start": "concurrently --kill-others \"npm run mock\" \"npm run dev\""
